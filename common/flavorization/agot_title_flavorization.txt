@@ -1,0 +1,286 @@
+﻿
+prince_lp_feudal_male_dorne = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	governments = { lp_feudal_government }
+	priority = 200
+	heritage = { heritage_rhoynish }
+	titles = { k_dorne }
+}
+
+prince_lp_feudal_female_dorne = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	governments = { lp_feudal_government }
+	priority = 200
+	heritage = { heritage_rhoynish }
+	titles = { k_dorne }
+}
+
+prince_lp_kingdom_male = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	governments = { lp_feudal_government }
+	priority = 75
+	top_liege = no
+}
+prince_lp_kingdom_female = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	governments = { lp_feudal_government }
+	priority = 75
+	top_liege = no
+}
+prince_lp_empire_male = {
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	governments = { lp_feudal_government }
+	priority = 75
+	top_liege = no
+}
+prince_lp_empire_female = {
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	governments = { lp_feudal_government }
+	priority = 75
+	top_liege = no
+}
+# Night's Watch
+lc_nights_watch_male = {
+	type = character
+	special = holder
+	tier = kingdom
+	priority = 250
+	governments = { nights_watch_government }
+}
+
+#Commanders 
+# kingsguard_lord_commander_flavors = {
+# 	type = character
+# 	special = holder
+# 	priority = 10000
+# 	titles = { 
+# 		d_kingsguard  
+# 	}
+# }
+
+
+commander_post = {
+	type = character
+	special = holder
+	priority = 50
+	top_liege = no
+	titles = { 
+		b_goldguard_heights 
+		c_moat_cailin 
+	}
+}
+
+### Regional Kings
+king_stormlands = { # Storm King
+	type = character
+	special = holder
+	gender = male
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_stormlands }
+}
+queen_stormlands = { # Storm Queen
+	type = character
+	special = holder
+	gender = female
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_stormlands }
+}
+
+king_north = { # King of Winter
+	type = character
+	special = holder
+	gender = male
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_north }
+}
+queen_north = { # Queen of Winter
+	type = character
+	special = holder
+	gender = female
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_north }
+}
+
+king_riverlands = { # River King
+	type = character
+	special = holder
+	gender = male
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_riverlands }
+}
+queen_riverlands = { # River Queen
+	type = character
+	special = holder
+	gender = female
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_riverlands }
+}
+
+king_wall = { # Night's King
+	type = character
+	special = holder
+	gender = male
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_wall }
+}
+queen_wall = { # Night's Queen
+	type = character
+	special = holder
+	gender = female
+	tier = empire
+	priority = 400
+	governments = { lp_feudal_government }
+	titles = { e_the_wall }
+}
+
+### Smaller Kingdoms
+king_duskendale = { # Dusk King
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_duskendale }
+}
+queen_duskendale = { # Dusk Queen
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_duskendale }
+}
+
+king_dreadfort = { # Red King
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_the_dreadfort }
+}
+queen_dreadfort = { # Red Queen
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_the_dreadfort }
+}
+
+king_runestone = { # Bronze King
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_runestone }
+}
+queen_runestone = { # Bronze Queen
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_runestone }
+}
+
+king_neck = { # Marsh King
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_the_neck }
+}
+queen_neck = { # Marsh Queen
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_the_neck }
+}
+
+king_banefort = { # Hooded King
+	type = character
+	special = holder
+	gender = male
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_banefort }
+}
+queen_banefort = { # Hooded Queen
+	type = character
+	special = holder
+	gender = female
+	tier = kingdom
+	priority = 300
+	governments = { lp_feudal_government }
+	titles = { k_banefort }
+}
+
+#lp_empire_male_faegon = { #king
+#	type = character
+#	gender = male
+#	special = holder
+#	tier = empire
+#	titles = {
+#		e_targaryen_host_title
+#	}
+#	priority = 300
+#	top_liege = no
+#}
+
+#lp_empire_female_faegon = { #queen
+#	type = character
+#	gender = female
+#	special = holder
+#	tier = empire
+#	titles = {
+#		e_targaryen_host_title
+#	}
+#	priority = 300
+#	top_liege = no
+#}

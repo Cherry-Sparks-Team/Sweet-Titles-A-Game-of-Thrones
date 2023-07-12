@@ -1,0 +1,357 @@
+﻿#KG Custom Loc
+LP_FEUDAL_TITLE = {
+	type = character
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					culture = {has_cultural_pillar = heritage_rhoynish }
+					vassal_contract_has_flag = has_march_contract		
+				}
+			}
+		}
+		localization_key = principality_lp_feudal 
+	}
+
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					culture = {has_cultural_pillar = heritage_rhoynish }
+					vassal_contract_has_flag = has_palatinate_contract		
+				}
+			}
+		}
+		localization_key = principality_lp_feudal 
+	}
+	
+	text = {
+		trigger = {
+			vassal_contract_has_flag = has_march_contract
+		}
+		localization_key = kingdom_lp_feudal_march 
+	}
+	
+	text = {
+		trigger = {
+			vassal_contract_has_flag = has_palatinate_contract
+		}
+		localization_key = empire_lp_feudal_default 
+	}
+	
+	text = {
+		trigger = {
+			NOR = { 
+				vassal_contract_has_flag = has_march_contract 
+				agot_is_independent_ruler = yes
+			}
+		}
+		localization_key = kingdom_lp_feudal_default 
+	}
+
+	text = {
+		trigger = {
+			NOR = { 
+				vassal_contract_has_flag = has_palatinate_contract 
+				agot_is_independent_ruler = yes
+			}
+		}
+		localization_key = kingdom_lp_feudal_default 
+	}
+
+	text = {
+		trigger = {
+			agot_is_independent_ruler = yes
+			NOT = {
+				culture = { has_cultural_pillar = heritage_rhoynish }
+			}
+		}
+		localization_key = kingdom_lp_feudal_independent_default 
+	}
+
+	text = {
+		trigger = {
+			agot_is_independent_ruler = yes
+			culture = { has_cultural_pillar = heritage_rhoynish }
+		}
+		localization_key = kingdom_lp_feudal_independent_rhoynish 
+	}
+}
+
+LP_FEUDAL_MALE = {
+	type = character 
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					vassal_contract_has_flag = has_march_contract	
+				}
+			}
+			culture = { has_cultural_pillar = heritage_rhoynish }
+		}
+		localization_key = principality_lp_feudal_male 
+	}
+
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					vassal_contract_has_flag = has_palatinate_contract	
+				}
+			}
+			culture = { has_cultural_pillar = heritage_rhoynish }
+		}
+		localization_key = principality_lp_feudal_male 
+	}
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					vassal_contract_has_flag = has_march_contract	
+				}
+			}
+		}
+		localization_key = king_lp_feudal_male_march 
+	}
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					vassal_contract_has_flag = has_palatinate_contract	
+				}
+			}
+		}
+		localization_key = emperor_lp_feudal_male_default 
+	}
+
+	text = {
+		trigger = {
+			agot_is_independent_ruler = yes
+			NOT = {
+				culture = { has_cultural_pillar = heritage_rhoynish }
+			}
+		}
+		localization_key = emperor_lp_feudal_male_default 
+	}
+
+	text = {
+		trigger = {
+			agot_is_independent_ruler = yes
+			culture = { has_cultural_pillar = heritage_rhoynish }
+		}
+		localization_key = king_lp_feudal_independent_rhoynish 
+	}
+	
+	text = {
+		trigger = {
+			agot_is_independent_ruler = no 
+		}
+		localization_key = king_lp_feudal_male_default 
+	}
+}
+
+LP_FEUDAL_FEMALE = {
+	type = character
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					OR = {
+						vassal_contract_has_flag = has_march_contract	
+						culture = { has_cultural_pillar = heritage_rhoynish }
+					}
+				}
+			}
+		}
+		localization_key = principality_lp_feudal_female 
+	}
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = {
+					OR = {
+						vassal_contract_has_flag = has_palatinate_contract	
+						culture = { has_cultural_pillar = heritage_rhoynish }
+					}
+				}
+			}
+		}
+		localization_key = principality_lp_feudal_female 
+	}
+	
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = { vassal_contract_has_flag = has_march_contract }
+			}
+		}
+		localization_key = king_lp_feudal_female_march 
+	}
+
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				exists = holder
+				holder = { vassal_contract_has_flag = has_palatinate_contract }
+			}
+		}
+		localization_key = emperor_lp_feudal_female_default 
+	}
+	
+	text = {
+		trigger = {
+			agot_is_independent_ruler = yes
+		}
+		localization_key = emperor_lp_feudal_female_default 
+	}
+
+	text = {
+		trigger = {
+			agot_is_independent_ruler = no 
+		}
+		localization_key = king_lp_feudal_female_default 
+	}
+}
+
+LP_FEUDAL_MALE_DUKE = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = duke_lp_feudal_male_march
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+            }
+        }
+        localization_key = duke_lp_feudal_male_palatine
+    }
+    text = {
+        fallback = yes
+        localization_key = duke_lp_feudal_male_default
+    }
+}
+LP_FEUDAL_FEMALE_DUCHESS = {
+    type = character
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_march_contract
+                AND = {
+                    highest_held_title_tier < tier_duchy
+                    exists = primary_spouse
+					root.primary_spouse = {
+						vassal_contract_has_flag = has_march_contract
+					}
+                }
+            }
+        }
+        localization_key = duke_lp_feudal_female_march
+    }
+    text = {
+        trigger = {
+            OR = {
+                vassal_contract_has_flag = has_palatinate_contract
+            }
+        }
+        localization_key = duke_lp_feudal_female_palatine
+    }
+    text = {
+        fallback = yes
+        localization_key = duke_lp_feudal_female_default
+    }
+}
+LP_FEUDAL_TITLE_DUCHY = {
+    type = character
+    text = {
+        trigger = {
+            vassal_contract_has_flag = has_march_contract
+        }
+        localization_key = duchy_lp_feudal_march
+    }
+    text = {
+        trigger = {
+            vassal_contract_has_flag = has_palatinate_contract
+        }
+        localization_key = duchy_lp_feudal_palatine
+    }
+    text = {
+        fallback = yes
+        localization_key = duchy_lp_feudal_default
+    }
+}
+
+LP_FEUDAL_EMPIRE_MALE = {
+	type = character 
+
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				this = title:e_dorne 
+			}
+		}
+		localization_key = principality_lp_feudal_male 
+	}
+	
+	text = {
+		trigger = { }
+		localization_key = emperor_lp_feudal_male_default 
+	}
+}
+
+LP_FEUDAL_EMPIRE_FEMALE = {
+	type = character 
+
+	text = {
+		trigger = {
+			exists = primary_title
+			primary_title = {
+				this = title:e_dorne 
+			}
+		}
+		localization_key = principality_lp_feudal_female 
+	}
+	
+	text = {
+		trigger = { }
+		localization_key = emperor_lp_feudal_female_default 
+	}
+}

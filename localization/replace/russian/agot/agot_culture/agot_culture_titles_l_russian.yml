@@ -1,0 +1,120 @@
+﻿l_russian:
+
+ #Default LP Feudal tiers
+ baron_lp_feudal_male:0 "Лорд"
+ baron_lp_feudal_female:0 "Леди"
+ barony_lp_feudal:0 "Феод"
+
+ count_lp_feudal_male:0 "Лорд"
+ count_lp_feudal_female:0 "Леди"
+ county_lp_feudal:0 "Лордство"
+
+ duke_lp_feudal_male:0 "[CHARACTER.Custom('LP_FEUDAL_MALE_DUKE')]"
+ duke_lp_feudal_male_default:0 "Лорд"
+ duke_lp_feudal_male_march:0 "Марочный лорд"
+ duke_lp_feudal_male_palatine:0 "Князь"
+ duke_lp_feudal_female:0 "[CHARACTER.Custom('LP_FEUDAL_FEMALE_DUCHESS')]"
+ duke_lp_feudal_female_default:0 "Леди"
+ duke_lp_feudal_female_march:0 "Марочная леди"
+ duke_lp_feudal_female_palatine:0 "Княгиня"
+ duchy_lp_feudal:0 "[CHARACTER.Custom('LP_FEUDAL_TITLE_DUCHY')]"
+ duchy_lp_feudal_default:0 "Владение"
+ duchy_lp_feudal_march:0 "Марка"
+ duchy_lp_feudal_palatine:0 "Княжество"
+ duke_lp_feudal_independent:0 "Лорд"
+ duke_lp_feudal_independent_female:0 "Леди"
+ duchy_lp_feudal_independent:0 "Верховное лордство"
+
+ kingdom_lp_feudal:0 "[CHARACTER.Custom('LP_FEUDAL_TITLE')]"
+ kingdom_lp_feudal_default:0 "Верховное лордство"
+ kingdom_lp_feudal_march:0 "Великая марка"
+ kingdom_lp_feudal_independent_default:0 "Королевство"
+ kingdom_lp_feudal_independent_rhoynish:0 "Княжество"
+
+ king_lp_feudal_male:0 "[CHARACTER.Custom('LP_FEUDAL_MALE')]"
+ king_lp_feudal_female:0 "[CHARACTER.Custom('LP_FEUDAL_FEMALE')]"
+ king_lp_feudal_male_default:0 "Верховный лорд"
+ king_lp_feudal_male_march:0 "Лорд-маршал"
+ king_lp_feudal_female_default:0 "Верховная леди"
+ king_lp_feudal_female_march:0 "Леди-маршал"
+ king_lp_feudal_independent_rhoynish:0 "Князь"
+ queen_lp_feudal_independent_rhoynish:0 "Княгиня"
+
+ empire_lp_feudal:0 "Королевство"
+ empire_iron_throne:0 "Семь Королевств"
+ empire_lp_feudal_default:0 "Королевство"
+
+ emperor_lp_feudal_male:0 "[CHARACTER.Custom('LP_FEUDAL_EMPIRE_MALE')]"
+ emperor_lp_feudal_female:0 "[CHARACTER.Custom('LP_FEUDAL_EMPIRE_FEMALE')]"
+ emperor_lp_feudal_male_default:0 "Король"
+ emperor_lp_feudal_female_default:0 "Королева"
+
+
+ principality_lp_feudal:0 "Княжество"
+ principality_lp_feudal_male:0 "Князь"
+ principality_lp_feudal_female:0 "Княгиня"
+
+ prince_lp_kingdom_male:0 "Лорд"
+ prince_lp_kingdom_female:0 "Леди"
+ prince_lp_feudal_male_dorne:0 "Принц"
+ prince_lp_feudal_female_dorne:0 "Принцесса"
+
+ prince_lp_empire_male:0 "Принц"
+ prince_lp_empire_female:0 "Принцесса"
+
+ #Wolfswood Clansman Master Title
+ wolfswood_clansman_master_male:0 "Господин"
+ wolfswood_clansman_master_female:0 "Госпожа"
+
+ #Riverlands
+ e_the_riverlands_old:0 "Реки и Холмы"
+
+ #Dorne
+ empire_dorne:0 "Княжество"
+ empire_dorne_male:0 "Принц"
+ empire_dorne_female:0 "Принцесса"
+
+ #First Man (Wildlings)
+ duke_first_man:0 "Магнар"
+ king_first_man:0 "Великий магнар"
+ emperor_first_man:0 "Верховный магнар"
+ empire_first_man:0 "Королевство"
+ kingdom_first_man:0 "Магнарство"
+ duchy_first_man:0 "Клан"
+
+ #Ruin
+ ruin_title:0 ""
+
+ #King Flavourisation
+ king_stormlands:0 "Штормовой король"
+ queen_stormlands:0 "Штормовая королева"
+ king_north:0 "Король Зимы"
+ queen_north:0 "Королева Зимы"
+ king_riverlands:0 "Речной король"
+ queen_riverlands:0 "Речная королева"
+ king_dorne:0 "Князь"
+ queen_dorne:0 "Княгиня"
+ king_wall:0 "Король Ночи"
+ queen_wall:0 "Королева Ночи"
+ king_iron_isles:0 "Железный король"
+ queen_iron_isles:0 "Железная королева"
+ king_beyond_the_wall:0 "Король-за-Стеной"
+ queen_beyond_the_wall:0 "Королева-за-Стеной"
+
+ #Smaller Kingdoms
+ king_duskendale:0 "Сумеречный король"
+ queen_duskendale:0 "Сумеречная королева"
+ king_dreadfort:0 "Красный король"
+ queen_dreadfort:0 "Красная королева"
+ king_runestone:0 "Бронзовый король"
+ queen_runestone:0 "Бронзовая королева"
+ king_neck:0 "Болотный король"
+ queen_neck:0 "Болотная королева"
+ king_banefort:0 "Король-в-Капюшоне"
+ queen_banefort:0 "Королева-в-Капюшоне"
+
+ #Faegon Host
+ lp_empire_male_faegon:0 "Король"
+ lp_empire_female_faegon:0 "Королева"
+ head_of_faith_male_normal:0 "[CHARACTER.GetFaith.ReligiousHeadName|U]"
+ head_of_faith_male_fots:0 ""

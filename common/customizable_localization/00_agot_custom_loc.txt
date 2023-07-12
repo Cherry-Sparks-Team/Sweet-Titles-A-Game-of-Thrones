@@ -1,0 +1,191 @@
+﻿# GetCapitalBaronyCL = {
+# 	type = character
+
+# #	random_valid = yes
+
+# 	text = {
+# 		localization_key = capitalbaronycl
+# 		trigger = {
+# 			is_landed = yes
+# 		}	
+# 	}
+
+# 	text = {
+# 		localization_key = capitalbaronycl_spouse
+# 		trigger = {
+# 			is_landed = no
+# 			exists = root.primary_spouse
+# 			root.primary_spouse = {
+# 				is_landed = yes
+# 			}
+# 		}
+# 	}
+# }
+
+# GetSecondTitleLine = {
+# 	type = character
+
+# 	text = {
+# 		localization_key = SECOND_TITLE_LINE_1
+# 		trigger = {
+# 			is_landed = yes
+# 		}	
+# 	}
+# }
+
+MaesterCheck = {
+	type = character
+	text = {
+		trigger = {
+			has_trait = maester
+		}
+		localization_key = MaesterTitle
+	}
+}
+
+iron_throne_spouse = { 
+type = character
+
+text = {
+	trigger = {
+		scope:councillor_liege.highest_held_title_tier = tier_empire
+	}
+	localization_key = councillor_court_chaplain_drowned_god_county
+	}
+}
+
+#Custom loc for the destination of an a reaver 
+#AGOT Reaving
+# ReavingDestination = {
+# 	type = character
+
+# 	text = { 
+# 		trigger = {
+# 			var:reaving_destination = flag:disputed_lands
+# 		}
+# 		localization_key = world_disputed_lands
+# 	}
+
+# 	text = { 
+# 		trigger = {
+# 			var:reaving_destination = flag:north_essos
+# 		}
+# 		localization_key = world_north_essos
+# 	}
+
+# 	text = { 
+# 		trigger = {
+# 			var:reaving_destination = flag:summer_sea
+# 		}
+# 		localization_key = world_summer_sea
+# 	}
+
+# 	text = { 
+# 		trigger = {
+# 			var:reaving_destination = flag:slavers_bay
+# 		}
+# 		localization_key = world_slavers_bay
+# 	}
+# }
+
+#KG Custom Loc
+KingsguardName = {
+	type = character
+
+	text = {
+		trigger = {
+			top_liege = {
+				is_male = yes
+			}
+		}
+		localization_key = kingsguard_name 
+	}
+
+	text = {
+		trigger = {
+			top_liege = {
+				is_female = yes
+			}
+		}
+		localization_key = queensguard_name
+	}
+
+	text = {
+		trigger = {
+		}
+		fallback = yes 
+		localization_key = kingsguard_name
+	}
+}
+
+CoinFlip = {
+	type = character
+
+	text = {
+		trigger = { var:flipped_trait = flag:diligent }
+		localization_key = coin_flip_diligent
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:learning }
+		localization_key = coin_flip_learning
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:martial }
+		localization_key = coin_flip_martial
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:intrigue }
+		localization_key = coin_flip_intrigue
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:stewardship }
+		localization_key = coin_flip_stewardship
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:diplomacy }
+		localization_key = coin_flip_diplomacy
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:prowess }
+		localization_key = coin_flip_prowess
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:shrewd }
+		localization_key = coin_flip_shrewd
+	}
+
+	text = {
+		trigger = { var:flipped_trait = flag:genius }
+		localization_key = coin_flip_genius
+	}
+}
+
+
+### Robert's Rebellion
+
+# Used to make duration of scripted pregnancies visible
+AGOTGetPregnancyMonths = {
+	type = character
+
+	text = {
+		trigger = { exists = var:agot_rr_months_of_pregnancy_lyanna }
+		localization_key = agot_pregnancy_months_scripted_lyanna
+	}
+
+	text = {
+		trigger = { exists = var:agot_rr_months_of_pregnancy_rhaella }
+		localization_key = agot_pregnancy_months_scripted_rhaella
+	}
+
+	text = {
+		trigger = { always = yes }
+		localization_key = agot_pregnancy_months_vanilla
+	}
+}

@@ -1,0 +1,117 @@
+﻿# Accepted categories are: governments, cultures, culture_groups, faiths, religions
+# A Flavorization will apply if ALL specified categories have ANY of their entries
+# represented in the character/title
+# So for example:
+# governments = { feudal_government }
+# culture_groups = { mongolic_group central_germanic_group }
+# religions = { christianity_religion }
+# cultures = { norse }
+# faiths = { catholicism }
+# For this to apply a character MUST BE feudal, AND must also be EITHER altaic OR germanic
+# priority is used to determine priority, if they are the same then the LAST will be selected,
+# and honorifics will be prefered over landed titles. Default priority is 1
+# If a flavorization does not have a tier it can apply to all tiers of characters, too many non-tiered
+# flavorizations is bad for performance though, YOU HAVE BEEN WARNED!
+# 'top_liege = no' means that its the holder of the title causing the honorific that is tested for
+# the various categories, so for a prince it is the king that is tested, for a queen mother it is her son
+# if this is not specified ( or 'top_liege = yes' the default ) then it is the top liege of that character
+# that is tested, this means that most title flavor comes from the top liege of the title not the holder
+
+#sultan = { #Example
+#	gender = male
+#	special = holder
+#	tier = kingdom
+	#	governments = { feudal_government clan_government }
+#	religions = { islam_religion }
+#}
+
+#############################################
+
+# Special Titles
+
+small_councillor_custom = {
+	type = character
+	special = holder
+	priority = 1001
+	flag = small_council_title
+	top_liege = no
+}
+
+#grand_maester = { flavouring court positions is evil 
+#	type = character
+#	priority = 599
+#	special = holder
+#	titles = { e_the_iron_throne }
+#	court_position = maester_court_position
+#}
+
+#master_of_whispers = {
+#	type = character
+#	special = councillor
+#	priority = 299
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_spymaster
+#}
+#master_of_coin = {
+#	type = character
+#	special = councillor
+#	priority = 299
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_steward
+#}
+#master_of_laws = {
+#	type = character
+#	special = councillor
+#	priority = 299
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_chancellor
+#}
+#mistress_of_whispers = {
+#	type = character
+#	special = councillor
+#	gender = female
+#	priority = 299
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_spymaster
+#}
+#mistress_of_coins = {
+#	type = character
+#	special = councillor
+#	gender = female
+#	priority = 299
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_steward
+#}
+#mistress_of_laws = {
+#	type = character
+#	special = councillor
+#	gender = female
+#	priority = 299
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_chancellor
+#}
+#mistress_of_war = {
+#	type = character
+#	special = councillor
+#	gender = female
+#	priority = 299
+#	tier = empire
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_marshal
+#}
+#master_of_war = {
+#	type = character
+#	special = councillor
+#	priority = 299
+#	tier = empire
+#	titles = { e_the_iron_throne }
+#	council_position = councillor_marshal
+#}
+kingsguard_lord_commander_flavor = {
+	type = character
+	special = councillor
+	priority = 399
+	tier = empire
+	titles = { e_the_iron_throne }
+	council_position = kingsguard_lord_commander
+}
